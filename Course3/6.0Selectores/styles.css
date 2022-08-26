@@ -1,0 +1,83 @@
+/*selectores*/
+/*
+selectores simples
+    selectores elementales -> usados en casos concretos
+        universal -> * este selecciona todo
+        tipo o etiqueta -> nombre de la etiqueta
+    selectores de atributo
+        id -> id del elemento -> no se recomienda dar estilos con ids
+        clase->clase del elemento
+        otros atributos
+
+selectores compuestos
+    selectores agrupados
+    selectores combinadores
+    pseudoclases-pseudoelemntos
+
+*/
+/* ejemplo selectores elementales*/
+/* selector universal 
+*{
+    margin: 0;
+    background-color: lightcoral;
+}
+
+selector de etiqueta 
+h1{
+    background-color: lightcyan;
+}
+
+p{
+    background-color: bisque;
+}
+*/
+
+/* ejemplo selectores de atributo 
+id:
+#title{
+    background-color: lightgray;
+}
+
+clase:
+.title{
+    background-color: yellowgreen;
+}
+
+.text{
+    background-color: yellow;
+}
+
+*/
+
+/*ejemplo de otros selectores 
+1.[atributo]
+2.[atributo+valor]
+3.[atributo^=valor] -> evalua si empieza con el nombre del valor
+4.[atributo*=valor] -> no importa la posicion del nombre del valor
+5.[atributo$=valor] -> evalua si el nombre valor termina con esa palabra
+ */
+
+
+[href="https://google.com"] {
+    background-color: red;
+}
+
+[href] {
+    background-color: pink;
+}
+
+[href^=color] {
+    background-color: red;
+}
+
+[href*='modo'] {
+    background-color: goldenrod;
+}
+
+[href$='verde']{
+    background-color: blue;
+}
+
+[lang|='en']{
+    background-color: aqua;
+}

@@ -1,0 +1,4 @@
+pagina para validar la calidad del css del site
+
+https://jonassebastianohlsson.com/specificity-graph/
+

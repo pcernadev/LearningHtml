@@ -1,0 +1,38 @@
+/* selectores compuestos
+    selectores agrupados
+    selectores combinadores 
+        selector desenciente 
+        selector de hermanos siguientez
+*/
+
+/*selector agrupado
+.text,
+.text-2,
+.text-3,
+.text-4 {
+    background-color: steelblue;
+}
+*/
+
+/* selector combinadores desencientes o seleccion de hijos, buenas practicas se recomienda bajar un solo nivel 
+div .title-2 {
+    background-color: blue;
+}
+*/
+
+
+/* selector de hermanos */
+/* .text-2 + .title-2{
+background-color: orange;
+}
+
+selecciona todo los hermano siguientes
+.text-2 ~ p {
+    background-color: tomato;
+} */
+
+/* selectores de hijos directos */
+
+.container > p{
+    background-color: tomato;
+}
