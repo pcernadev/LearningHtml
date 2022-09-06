@@ -6,11 +6,33 @@ el calculo se realiza con la siguiente formula
     clases, atributos y pseudoclases 0,1,0
     ids 1,0,0
     estilos en linea 1,0,0,0
-cascada 
-herencia */
+cascada -> funciona simpre que la especificidad sobre el elemento sea la misma
+herencia -> es la capacidad que tienen algunos elementos de heredar algunas propiedades de sus elementos
+contenedores (padres, abuelos, etc)
 
-.title{
-    background-color: teal;
+*/
+
+body{
+    background-color: #333;
 }
 
+.title{
+    color: cyan;
+    font-size: 10px;
+}
 
+.text{
+    color: green;
+}
+
+.link{
+    color:inherit; /*fuerza la herencia de caracteristicas del elemneto padre*/ 
+}
+
+.list{
+    color: indianred;
+}
+
+.list-item-extra{
+    color: initial; /*ignora la herencia y aplica el estilo por defecto*/
+}

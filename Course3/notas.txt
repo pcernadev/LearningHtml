@@ -2,3 +2,22 @@ pagina para validar la calidad del css del site
 
 https://jonassebastianohlsson.com/specificity-graph/
 
+
+link de normalize
+https://necolas.github.io/normalize.css/
+
+
+link autoprefixer
+https://autoprefixer.github.io/
+
+link prepros -> herramienta que funciona como el autoprefixer
+https://prepros.io/
+
+BOX MODEL
+    CONTENIDO
+    BORDE
+    PADDING: DISTANCIA DESDE EL BORDE DE LA CAJA HASTA EL CONTENIDO
+    MARGIN: SEPARA BOX DE OTROS
+    HEIGHT
+    WIDTH
+
