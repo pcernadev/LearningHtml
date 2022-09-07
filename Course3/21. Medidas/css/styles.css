@@ -1,0 +1,22 @@
+/*
+las medidas de css se pueden agrupar en 2 grupos: absolutas y relativas
+
+las medidas absolutas NO CAMBIAN y siempre mantendran su tamaño independiente del 
+dispositivo o la interaccion del usuario.
+la mas usada es px (pixeles) cuya medida es 1/96 de lin, pero existen otras como:
+    cm -> 1cm = 96px/2.54
+    mm -> 1mm = 1/10 de 1cm
+    Q(Quarto de milimetro) 1Q = 1/ 40 de 1cm
+    in(inches, pulgadas) -> 1in = 2.54 cm = 96px
+    pc(picas) 1pc = 1/96 de 1in
+    pt(puntos) 1pt= 1/72 de 1in
+
+las medidas relativas siempre dependen de un contexto son la que se recomiendan utilizar
+la mayoria de ocasiones porque nos va a permitir que todos los elementos escalen proporcionalmente
+las usandas son em,rem, %, vw, vh, vmin y vmax aunque tenemos otras como 
+    ex-> altura x de la fuente del elemento.
+    ch.> la medida del ancho del glifo "0" de la letra del elemento.
+    lh-> altura de la linea del elemento
+*/
+
+
