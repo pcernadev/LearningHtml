@@ -1,0 +1,31 @@
+/*
+HEXADECIMAL
+    la notacion hexadecimal es la mas comun en desarrollo web, se basa en los mismos principios
+    que el rgb pero escrito en notacion hexadecimal.
+
+    el sistema hexadecimal es un sistema basado en 16 valores del 0 al 15
+    utiliza los digitos en 0 al 9 y las letras de la A a la F
+
+    En este tipo de notacion tambien necesitamos 256 valores-
+
+    se compone de 16 caracteres en parejas ya que 16*16 = 256
+    0 1 2 3 4 5 6 7 8 A B C D E F
+    0 1 2 3 4 5 6 7 8 A B C D E F
+
+    Para indicar que vamos a usar el valor hexadecimal debemos usar el caracter #
+    y a continuacion usaremos esta notacion en pareja  #RRGGBB
+
+
+*/
+
+body{
+    background-color: magenta;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color:#00ff00;
+
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 0.5);
+}

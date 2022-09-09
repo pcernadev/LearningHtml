@@ -7,7 +7,7 @@
     
     tiene las mismas propiedades y sintaxis que border, pero con algunas diferencias
         no ocupa sitio, ya que no forma parte del box-model
-        no se redondear
+        no se redondea
         no se puede controlar los lados de una forma independiente
 
     tambien cuenta con la propiedad outline-offset que nos permite aumentar o disminuir la distancia del outline

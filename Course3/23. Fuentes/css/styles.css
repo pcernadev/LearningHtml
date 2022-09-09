@@ -1,0 +1,14 @@
+/*
+funetes desde un servidor remoto, son fuentes que se encuentran en un servidor y que
+nosotros descargamos para su uso, la mas famosa es Google fonts
+
+siempre que utilicemoms fuentes no genericos, debemos poner fuentes genericas 
+de fallback(respaldo)
+*/
+
+body{
+    background-color: #333;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;/*esto es el falbback si falla el link de roboto, recupera con sans-serif*/
+}
+

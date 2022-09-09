@@ -24,3 +24,10 @@ BOX MODEL
 COLORES
 https://www.w3.org/wiki/CSS/Properties/color/keywords
 
+paleta de colores 
+https://brandcolors.net/
+
+https://color.adobe.com/es/create/color-wheel
+
+fuentes 
+https://fonts.google.com/specimen/Roboto
