@@ -1,0 +1,51 @@
+/*
+Formatos para fuentes
+    True Type Font (TTF) fue el primer formato estandar.
+
+    Open True  Type Font (OTF) facilita o implementa la creacion de las curvas
+
+    Web Open Font Format (WOFF) (WOFF2)-> Es un formato mucho mas ligero y mejora el rendimiento. funciona a 
+    traves de metadatos. WOFF tiene soporte total y WOFF2 no funciona en internet explorer.
+
+    Scalable vector grafiphcs (SVG) -> para efectos y animaciones sobre el texto, no es recomendable usarlo en el 
+    texto generico de la web, tiene muchos problemas.
+
+    Embedded Open Type (EOT) primer formato digital propuesto para sitios web y es comprimido. se quedo como una
+    propuesta pero no paso a ser un estandar
+
+    Regla @font-face
+        Esta es la forma de utlizar fuentes que tenemos desacargadas y que no traemos de un servidor remoto,
+        cuando usamos fuentes google fonts, esto es lo que esta pasando por detras
+
+        la sintaxis es:
+        @font-face{
+            font-family: nombre de la familia, se lo asignamos nosotros;
+            src: aqui pondremos dos tipos de valores.
+                local()-> prondremos el nombre de la fuente para buscarla en el ordenador del usuario, 
+                de esa forma podremos evitar descargarla 
+                URl()-> si no encontramos esa fuente procederemos a descargarla.
+                format()->este valor lo pasaremos de forma opcional si queres ser mas especificos con la fuente
+                que vamos a buscar o descargar, si no lo ponemos cogera el primer formato soportado, si lo ponemos sol
+                usara el que hemos establecido, y si no lo encuentra no hara mas.
+        }
+
+        podemos anadirle mas valores como  font.style, font.weight y font display(experimental), pero esos
+        son opcionales
+
+*/
+
+@font-face {
+    font-family: 'xxxx';
+    src: url('../assets/fonts/Anthony\ Bennett.ttf');
+}
+
+body{
+    background-color: #333;
+    color: aliceblue;
+    font-family: 'xxxx';
+}
+
+.icon{
+    font-size: 3rem;
+    color:red;
+}

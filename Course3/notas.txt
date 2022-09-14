@@ -31,3 +31,16 @@ https://color.adobe.com/es/create/color-wheel
 
 fuentes 
 https://fonts.google.com/specimen/Roboto
+
+https://www.1001fonts.com/
+
+https://www.dafont.com/es/
+
+https://convertio.co/es/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
+
+https://css-tricks.com/
+
+https://caniuse.com/
+
