@@ -1,5 +1,7 @@
 /*
 
+pseudoclases de estado de formulario
+
 UI States
     :enabled 
     :disabled
@@ -10,5 +12,77 @@ UI States
     :optional
     :valid
     :invalid
-    :fullscreen
+    :fullscreen -> se aplica cuando el elemento esta en pantalla
+    completa
 */
+
+.input, .label
+{
+    display: block;
+}
+
+.input:enabled{
+    background: red;
+}
+
+.input:disabled{
+    background: yellow;
+    border: none;
+}
+
+.input:checked + label{
+    font-size: 2em;
+}
+
+.input:in-range{
+    background: green;
+}
+
+.input:out-of-range{
+    background: blue;
+}
+
+.input:optional{
+    background: purple;
+}
+
+.input:required{
+    background: lightcoral;
+}
+
+.input:valid{
+    background: green;
+}
+
+.input:invalid{
+    background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
