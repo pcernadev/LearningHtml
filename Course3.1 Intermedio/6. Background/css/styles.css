@@ -1,0 +1,125 @@
+/*
+
+BackGround 
+Es una propiedad que nos permite darle un fondo a las cajas.
+
+La propiedad background es un shortand, la lista de propiedades que incluye background son:
+    background-color: nos permite establecer un color de fondo.
+    background-image: nos permite establecer una imagen de fondo.
+    background-repeat: nos permite establecer si un fondo se repite o no
+    
+        repeat-x|repeat-y|no repeat
+    
+    background-position: nos permite establecer la posicion del background
+
+        left top
+        left center
+        right top
+        right center 
+        right bottom 
+        center top
+        center certer
+        center bottom 
+        x% y%
+        xpos ypos
+        initial
+        inherit
+
+
+    background-size: nos permite establecer el tamaño del background
+    
+        x [y] |auto|cover|contain
+
+        el valor en y es opcional, sino le ponemos lo calcula automaticamente
+        cover-> cubre la caja por completo, aunque la imagen escape del contenedor
+        contain-> la imagen se ejusta al contenido
+    
+    background-origin: nos permite establecer desde donde se empezara a dibujar el fondo
+        redimenciona la imagen para que ocupe la zona que le decimos
+         border-box|padding-box|content-box
+    
+    background-clip: nos permite establecer en que parte de la caja se dibujara el fondo
+        muestra la imagen donde le decimos, solo ocupa, no redimenciona 
+        border-box|padding-box|content-box
+
+    background-attachmente: nos permite establecer si el background es relativo a la caja o al viewport
+        scroll|fixed
+*/
+
+[class^="bg-"] {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+    height: 150px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+body {
+    padding-bottom: 50em;
+    text-align: center;
+}
+
+
+.bg-color {
+    background-color: purple;
+}
+
+.bg-image {
+    background-image: url(../assets/pexels-ella-wei-6173618.jpg);
+}
+
+.bg-size {
+    background-image: url(../assets/pexels-nastyasensei-2575835.jpg);
+    background-size: cover;
+}
+
+.bg-repeat {
+    background-image: url(../assets/pexels-ella-wei-6173618.jpg);
+    background-size: 80px;
+    background-repeat: repeat-y;
+}
+
+.bg-position {
+    background-image: url(../assets/pexels-ella-wei-6173618.jpg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+
+.bg-origin {
+    border: 10px dotted red;
+    padding: 20px;
+    background-image: url(../assets/pexels-ella-wei-6173618.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+.bg-clip {
+    border: 10px dotted red;
+    background-color: blue;
+    background-clip: content-box;
+    padding: 20px;
+}
+
+.bg-attachment {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/pexels-ella-wei-6173618.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-multiple {
+    background-image: url(../assets/pexels-nastyasensei-2575835.jpg),
+        url(../assets/pexels-ella-wei-6173618.jpg);
+
+    background-size: 10%,cover;
+    background-repeat: no-repeat;
+    background-position: bottom right, center;
+}
