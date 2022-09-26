@@ -22,13 +22,50 @@ TIPOGRAFIA
 
         line-height
         letter-spacing
-*/
+
+     font-size: establece el tamaño de fuente se define en unidades
+        px
+        em
+        rem
+        %
+        
+        vh
+        vw
+        vmin
+        vmax
+    
+    font-weight establece el grosor de la fuente
+        bold|normal|100-900
+    font-style: establece el estilo de tipografias
+        normal|italic|oblique        
+
+
+     text-indent: mueve la primera line de un texto solo en elementos de bloque   
+
+    line-height establece la altura de la linea 
+    letter-spacing establce la separacion  de la letras con una medida en 
+    cualquier unidad
+     
+
+     */
 
 body{
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 .title{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 10vmax;
+    font-family: monospace; /*Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+    font-size: 1vh;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+}
+
+.box_item{
+  line-height: 100px;
+letter-spacing: 5px;
+
 }
