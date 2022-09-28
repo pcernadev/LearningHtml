@@ -1,0 +1,57 @@
+/*
+
+Object-fit: se usa para especificar como se debe cambiar el tamaño de img o video par que se ajuste a su contenedor
+    fill: valor por defecto
+    contain: el contenido se ajustara hasta rellenar de forma horizontal o vertical el contenedor sin deformarse
+    cover: el contenido se ajustara hasta rellenar de forma horizontal y vertical el contenedor sin deformarse
+    none: el contenido no se redimensiona y mantiene su tamaño original mostrando solo el trozo de las dimesiones especificas
+    scale-down: selecciona el menor de la comparasion entre none y contain.
+
+    object position: coloca la imagen cuando esta no muestra completa en el contenedor 
+
+filter:
+    none: 
+    blur(px): desenfoca la imagen
+    brightness(%): ajusta el brillo de la imagen siendo 1 el original, De 0 a 1 dan oscuridad y de 1 a n dan sobreexposicion
+    contrast(%): ajusta el contraste de la imagen siendo 1 el original. de 0 e negro y de 1 a n dan mas contraste.
+    drop-shadow(h-shaddow v-shadow blur spread color): aplica una sombra paralela a la imagen 
+    grayscale(%): convierte la imagen a la escala de grises, 0 es el original y 1 seria blanco y negro completamente 
+    hue-rotate(deg): añade matiz de color a la imagen. se da un color en grados segun la rueda cromatica. el valor maximo es 360deg
+    invert(%): Invierte el color de la imagen. saca un negativo. 0 es el valor por defecto y 1 es totalmente invertida 
+    opacity(%): controla la opacidad de la imagen. 1 es el valor por defecto y 0 es transparente 
+    saturate(%): controla la saturacion de color de la imagen. 1 es el valor por defecto. 0 es totalmente saturada y por encima 
+    de 1 se sobresatura.
+    sepia(%): aplica un tono sepia a la imagen. 0 es el valor por defecto y 1 es totalmente sepia
+
+*/
+
+/* .img{
+    width: 250px;
+    height: 450px;
+    background: red;
+    object-fit: cover;
+    object-position: left ;
+    transition: object-position 5s;
+}
+
+.img:hover{
+    object-position: right;
+} */
+
+.img-2{
+    max-width: 100%;
+    /* filter: blur(5px); */
+    /* filter: brightness(1); */
+    /* filter: contrast(2); */
+    /* filter: drop-shadow(10px 10px 5px black); */
+    /* filter: grayscale(1); */
+    /* filter: hue-rotate(45deg); */
+    /* filter: invert(.6); */
+    /* filter: opacity(0.8); */
+    /* filter: saturate(.7); */
+    filter: sepia(0.9);
+}
+
+.img-2:hover{
+    filter: none;
+}
