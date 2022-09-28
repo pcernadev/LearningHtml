@@ -1,0 +1,53 @@
+/*
+
+No existen propiedades para imagenes en CSS
+
+1. Imagenes responsive. en el archivo base se recomienda poner la regla 
+
+img{
+    max-width: 100%
+}
+
+2. Las imagenes por defecto son elementos inline. esto causa un espacio por debajo debido a su line-height:0, se puede solucionar de dos formas
+
+Dado un line-height:0 al contenedor o un display:block a la imagen 
+
+3. Centrado horizontal
+     imagen con display:block y margenes laterales automaticos 
+     text-align:center, si la imagen no es de bloque 
+
+4. Centrado vertical
+    flexbox la mejor opcion
+    vertical-align: middle, A la imagen y al texto      
+
+
+*/
+
+/* img{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container{
+    background: red;
+    text-align: center;
+}
+
+.img-container img, .img-container span{
+    vertical-align: middle;
+} */
+
+.img-container img, .img-container span{
+    vertical-align: middle;
+}
+
+.img-container{
+    display: table;
+}
+
+.img-container span{
+    vertical-align: middle;
+    display: table-cell;
+}
