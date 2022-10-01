@@ -1,0 +1,57 @@
+/*
+
+clip-path: es una mascara que oculta partes de una caja 
+ circle: dibuja un circulo, puede tener una medida fija, circle(100px)
+ o podeemos especificar un centro con at, circle(100px at medida x meddiaY | palabrasclaveX palabrasclavesY)
+
+ ellipse():dibuja una elipse, funciona igual qu eel circulo, pero en este caso podemos 
+ especificar 2 centros, el horiz y verti 
+
+ inset: dibuja un borde transparente por dentro de la caja
+ (all| yx | top x bootom  | top left bottom right)
+ existe la opcion de rendondear las esquinas, para ellos despues los valores de inset pondremos round 
+ insert(*** round all | 
+    top-left bootom-right top.right bottom left |
+    top.left top-right & botom-left botom-right 
+    top.left top-right botom-right bottom.left
+    )
+
+  polygon(): especifica una serie de puntos(minimo3) para difinir la zona visible 
+  siendo el punto 0 0 la esquina superior izquierda
+  
+  generador de clip.path: https://bennettfeely.com/clippy/
+
+    */
+
+body{
+    background: #333;
+}    
+
+.box{
+    width: 400px;
+    height: 400px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box__item{
+    background: lightcoral;
+    width: 400px;
+    height: 400px;
+    /* clip-path: circle(100px at bottom); */
+    /* clip-path: ellipse(120px 60px at bottom); */
+    /* clip-path: inset(20px round 20px 60px 89px 200px); */
+    /* clip-path: polygon(0 0, 100% 50px, 0 100%, 30px 80%); */
+    /* clip-path: polygon(50% 0, 0 100%, 100% 100%); */
+    /* clip-path: polygon(25% 25%, 75% 25%, 25% 75%, 75% 75%); */
+    /* clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%); */
+    /* clip-path: polygon(19% 44%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 30% 42%, 90% 50%, 65% 50%, 73% 55%, 35% 100%, 35% 50%, 10% 50%); */
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    transition: clip-path 0.10s;
+
+}
+
+.box:hover > .box__item{
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
