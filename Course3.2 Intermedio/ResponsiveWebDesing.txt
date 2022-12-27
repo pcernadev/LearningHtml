@@ -1,0 +1,44 @@
+No es un estandar, no es css, es un conjunto de patrones de diseño.
+
+su objetivo es que cualquier pagina se vea bien independientemente del dispositivo
+
+los frameworks resuelven ese problema 
+
+se basa en 3 conceptos fundamentales 
+
+columnas fluidas
+
+imagenes flexibles maxwidth 100%
+
+media querys 
+
+al dia de hoy el numero de retos a crecido notablemnete y se usa javascript
+
+COLUMNAS fluidas
+
+para conseguir un sistema de columnas o de cajas fluidas es tan 
+
+media querys 
+
+son condicionales
+
+all: apto para todos los dispositivos
+
+print: destinado a material impreso y visualizacion del modo de vsita de impresion
+
+screen: destinado principalmente a la pantallas
+
+speech: destinado a sintetizadores de voz
+
+sintaxis: @media tipo de medio and or codicion
+
+metodologias
+
+mobile-first
+
+desktop-first
+
+content-first
+
+
+

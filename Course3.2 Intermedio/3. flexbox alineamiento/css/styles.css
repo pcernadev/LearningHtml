@@ -1,0 +1,117 @@
+/*
+alineamiento 
+    estas propiedades se aplican siempre al flex-container
+
+existen propiedades para el main-axis y para cross-axis
+    main axis
+        justify-content: flex-start(default) | center | space-between | space around | space evenly | flex-end
+            
+        flex-start: alinea los elementos al principio del main-axis 
+        center: centra los elementos a la mitad del main-axis
+        flex-end: alinea los elementos al final del main-axis
+
+        space-between: distribuye los items a la misma distancia y no deja espacio exterior ni el primer ni el ultimo flex end.
+
+        space-around: distribuye los items a la misma distancia y deja un espacio exterior entre el primero y el ultimo flex-items
+
+        space-evenly: distribuye los items  y los espacios exteriores del primer y el ultimo flex-item dejando la misma distancia entre todos.
+        
+    cross-axis
+        align-items:una sola linea
+         flex-start | center | flex-end | stretch(default) | baseline
+         
+        align-content: valios items
+         flex-start | center | flex-end | stretch(default) | baseline
+         
+        
+        align-self: se aplica al flex-item, sirve para alinear un elemento en concreto  en el cross axis 
+
+
+       truco extra
+
+        */
+
+.flex-container {
+    background-color: #fca170;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    margin-bottom: 1em;
+    /*justify-content: center; */
+    /*justify-content: center; justifycontent solo se aplica al main axis*/
+    /*align-items: flex-start; se aplica a una sola linea*/
+    flex-wrap: wrap;
+    /* align-content: center; */
+
+} 
+
+.flex-item {
+    width: 50px;
+    height: 50px;
+    margin: .5em;
+    margin-bottom: auto;
+    margin-left: auto;
+    /* margin: auto; */
+    background-color: #9a348b;
+    color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+} 
+
+.box {
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.box img {
+    max-width: 50%;
+}
+
+.prices {
+    display: flex;
+} 
+
+/* .box{
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.box img{
+    max-width: 50%;
+} */
+
+/* .prices {
+    display: flex;
+    align-items: flex-start;
+    height: 600px;
+}
+
+.prices__item{
+    width: 25%;
+    height: 300px;
+}
+
+.prices__item:first-child{
+    background: peru;
+}
+
+.prices__item:nth-child(2){
+    background: green;
+    line-height: 20px;
+    align-self: flex-end;
+}
+
+.prices__item:nth-child(3){
+    background: indianred;
+    line-height: 15px;
+}
+
+.prices__item:nth-child(4){
+    background: lightgreen;
+    line-height: 50px;
+} */

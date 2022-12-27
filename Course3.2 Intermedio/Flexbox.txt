@@ -1,0 +1,30 @@
+flexbox - base
+
+*es un modelo de layout que permite que las cajas sean flexibles,
+es un valor de la propiedad display
+
+*existe diplay:flex y diplay: inline-flex para que el contenedor sea bloque o 
+linea respectivamente.
+
+*se necesita un contenedor(flex-container) y al menos un hijo(flex-item)
+
+*las flexibles son los items, el contenedor es el contexto al que pertenecen
+los items
+
+
+flexbox -eje
+
+*exiten 2 ejes para colocar y alinear elementos.
+
+*por defecto el eje principal es horizontal y de izq a derech y el eje 
+secundario es vertical de arriba a abajo 
+
+*se puede intercambiar los ejes y la direccion de ambos
+
+main axis -> eje principal
+    main start
+    main end
+
+cross axis -> eje secundario 
+    cross start
+    cross end

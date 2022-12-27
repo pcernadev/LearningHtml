@@ -1,0 +1,32 @@
+Grid - fundamentos
+
+*es un modelo de layout que pemite construir grillas o cuadriculas dinamicas. 
+es un valor de la propiedad display
+
+*al igual que con flexbox, tenemos display: grid  y display:inline-grid
+
+*se necesita un contenedor (grid-container) y al menos un hijo (grid-item)
+
+*las celdas son los items, el contenedor es el contexto que pertenecen lo items
+
+Grid - terminologia
+
+*Grid-column: es cada columna de nuestra cuadricula
+
+*Grid-row: es cada fila de nuestra cuadricula
+
+*Grid-cell: es cada celda de nuestra cuadricula
+
+*Grid-gap: es la separacion entre celdas
+
+*Grid-line: existen column lines y row lines, son las lineas que delimitan cada columna/fila respectivamente
+
+
+Grid ventajas
+
+*en grid cada celda es dinamica y el resto de la cuadricula se adapta
+
+*podemos decir  donde empieza cada celda y donde se acaba, tanto en columna como en fila 
+
+*sus posibildades son inmensas
+

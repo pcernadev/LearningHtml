@@ -1,0 +1,182 @@
+/*
+flexbox 
+    propiedad flex es un shorthand que engloba las siguiente propiedades
+        todas la medidas se establecen en funcion del espacio disponible  en el contenedor
+
+    flex-grow establece que hacer cuando hay un espacio sobrante. cuantas divisiones coge el elemento.
+    el valor es un entero desde 0 hasta n ó auto
+    
+    flex-shrink establece qeu hacer cuando no hay espacio suficiente, cuantas divisiones pierde el elemento 
+    el valor es un entero desde 0 hasta n
+
+    flex-basis establece cuanto tiene que ocupar el item antes de encojer o extenderse, flex-basis prevalece ante width si main-axis es horizontal 
+    o ante height si el main-axis es vertical 
+    el valor es un entero desde 0 hasta n
+
+    los valores del flex son:
+        por defecto es 0 1 auto
+        auto: 1 1 auto
+        none 0 0 auto
+
+    order: establece que orden ocupara el elemento en el contenedor flex. el valor es el "peso" 
+    respecto a los valores que tengan los otros elementos. por defecto es 0
+    
+    extra 
+        existe un shorthand para flex-direction y flex-wrap; flex-flow: flex direction flex-wrap 
+        flex-flow: column wrap 
+
+
+*/
+
+/* .flex-container {
+    background-color: #fca170;
+    height: 300px;
+    width: 600px;
+    display: flex;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    background-color: #9a348b;
+}
+
+.flex-item:nth-child(2) {
+    background: lightseagreen;
+    flex-grow: 1;
+}
+
+.flex-item:nth-child(3) {
+    background: lightskyblue;
+}
+
+.flex-item:nth-child(4) {
+    background: darkgoldenrod;
+} */
+
+/* .flex-container {
+    background-color: #fca170;
+    height: 300px;
+    width: 400px;
+    display: flex;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    color: aliceblue;
+    background-color: #9a348b;
+}
+
+.flex-item:nth-child(2) {
+    background: lightseagreen;
+    flex-shrink: 2;
+}
+
+.flex-item:nth-child(3) {
+    background: lightskyblue;
+}
+
+.flex-item:nth-child(4) {
+    background: darkgoldenrod;
+} */
+
+/* .flex-container {
+    background-color: #fca170;
+    height: 300px;
+    width: 400px;
+    display: flex;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50px;
+    height: 50px;
+    color: aliceblue;
+    background-color: #9a348b;
+}
+
+.flex-item:nth-child(2) {
+    background: lightseagreen;
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+.flex-item:nth-child(3) {
+    background: lightskyblue;
+}
+
+.flex-item:nth-child(4) {
+    background: darkgoldenrod;
+}  */
+
+
+/* .flex-container {
+    background-color: #fca170;
+    height: 300px;
+    width: 400px;
+    display: flex;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    background-color: #9a348b;
+}
+
+.flex-item:nth-child(2) {
+    background: lightseagreen;
+   flex: 1;
+}
+
+.flex-item:nth-child(3) {
+    background: lightskyblue;
+}
+
+.flex-item:nth-child(4) {
+    background: darkgoldenrod;
+}  */
+
+.flex-container {
+    background-color: #fca170;
+    height: 300px;
+    width: 400px;
+    display: flex;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    background-color: #9a348b;
+    order: 0;
+}
+
+.flex-item:nth-child(2) {
+    background: lightseagreen;
+}
+
+.flex-item:nth-child(3) {
+    background: lightskyblue;
+}
+
+.flex-item:first-child {
+    background: darkgoldenrod;
+    order: 2;
+} 

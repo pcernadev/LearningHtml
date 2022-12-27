@@ -1,0 +1,47 @@
+/*
+
+medidas de la cuadricula
+    se pueden dar medidas con cualquiera de las unidades que ya conocemos y 2 mas 
+    que vienen con grid, fr y auto 
+        fr: equivale a n fracciones del espacio disponibles despues de establecer las medidas fijas 
+        auto: equivale al espacio que quede despues de repartir todos los elementos, es el ultimo
+        que se reparte. el tamaño minimo del item sera el espacio del 
+        contenido + el padding si lo tuviera 
+
+    fucnion repeat()
+        con la funcion repeat podemos establecer repeticiones de medidas o patrones .
+        en el caso "simple" recibiria 2 parametros (valores):
+            repeat(ncolumnas o nfilas, medida)
+            grid-template-columns: repeat(4,100px) es lo mismo que 
+            grid-template-columns: 100px 100px 100px 100px 
+        si como segundo valor añadimos mas de una medida, contruiremos un patron, no hay limite de valores
+            grid-template-columns: repeat(2, 100px 50px) es lo mismo que 
+            grid-template-columns: 100px 50px 50px 100px
+*/
+
+            
+body {
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: no-repeat;
+    margin: 0;
+    color: #eee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}            
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 100px 80px) /*150px repeat(3,100px)*/ /*100px 100px auto 100px;*/
+}
+
+.grid-item{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1rem;
+}

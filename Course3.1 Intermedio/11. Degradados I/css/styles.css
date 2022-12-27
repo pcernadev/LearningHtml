@@ -1,0 +1,62 @@
+/*
+un degradado es una transicion enre un color y otro. el navegador calculara todos los pasos
+intermedios entre los colores del degradado
+
+es un valor de background-image
+existe dos tipos de degradados: lineales y radiales 
+
+degradados lineales
+    linear-gradient(direction, color1, color2)
+    background-image: linear-gradient(red, blue)
+    la direccion es opcional, se puede establecer con un angulo(20deg, 190deg) o
+    estableciendo la direccion del degradado con "top | right | bottom | left | top left |
+    top right | bottom left | bottom right
+    background-image: linear-gradient (top right, red, blue)
+
+    si no establecemos paradas de color, el navegdor dividira el espacio disponible 
+    entre los colores que tenga que pintar.
+    2 colores 0% 100%
+    3 colores 0% 50% 100%
+
+    para establecer las paradas se pueden usar cualqueir medida, px, em, %
+    si las paradas/inicios empiezan en el mismo sitio se genera un corte solido
+    background-image: linear-gradient(red 50%, blue 50%)
+
+    linear-gradient: (direction, color1 stop, color2 start)
+    background-image: linear-gradient 
+
+degradados radiales
+    funciona de una forma similar a los degradados lineales.
+    background-image: radial-gradient([shape], red, blue)
+    background-image: radial-gradient(red, blue)
+
+    por defecto shap se ajustara al tamaño de la caja, pero podemos establecer si queres 
+    un circulo  o una elipse y definir el radio o los radios.
+    background-image: radial-gradient(circle, 100px, red, blue)
+    background-image: radial-gradient(ellipse 100px 50px, red, blue)
+
+    sino establecemos el punto de origen, el punto 0 0 sera el centro del elemnto. para 
+    establecer el punto de origen podemos hacerlo en medidas o con palabras clave.
+    con la palabra at establecemos el punto de origen. los valores que acepta son:
+     top | right | left | center | closet-side | closet-corner | farthest-side | farthest-corner
+    
+    background-image : radial-gradient(circle 100px at top left, red 50%, blue 50%);
+    si establecemos un solo valor, segundo por derfecto sera center
+    background-image: radial-gradient(circle 100px at top, red 50%, blue 50%) 
+
+*/
+
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 2em auto;
+    /* background-image: linear-gradient(to right,red,blue); */
+    /* background-image: linear-gradient(60deg,red,blue); */
+    /* background-image: radial-gradient(circle 100px, red 50%,blue 50%); */
+    /* background-image: radial-gradient(circle 100px at top, red 50%,blue 50%); */
+    background-image: radial-gradient(ellipse 100px 50px, red 50%,blue 50%);
+}

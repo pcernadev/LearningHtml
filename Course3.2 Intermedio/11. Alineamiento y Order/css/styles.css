@@ -1,0 +1,89 @@
+/*
+Alineamiento
+
+    Justify-items:Alinea los elementos horizontalmente con respecto a la celda
+
+    align-items: alinea los elementos verticalmente con respecto a la celda 
+
+    Admiten: 
+        start
+        end 
+        center 
+        stretch (default)
+
+    place-items: engloba en la propiedades justify-items y align-items
+        place-items: align-items/justify-items    
+
+
+    justify-content: alinea los elementos horizontalmente respecto al contenedor 
+    
+    align-content: Alinea los elementos verticalmente respecto al contenedor 
+
+    admite:
+        start
+        end 
+        center
+        strech(default)
+        space-around
+        space-between
+        space-evenly
+    place-content: align-content / justify-content
+
+    Tenemos las mismas propiedades para self para los items
+        justify-self
+        align-self
+        place-self
+
+        admite los valores 
+            start
+            end
+            center
+            stretch
+
+
+    order: funciona igual que en flexbox, por defecto todos los items tienen order 0        
+
+
+*/
+
+
+body{
+    height: 100vh;
+    color: #eee;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8,#3a1957);
+    background-repeat: no-repeat;
+}
+
+.grid-container{
+    display: grid;
+    grid-gap: 10px;
+    height: 80vh;
+    border: 3px solid yellow;
+    grid-template-columns: repeat(3,1fr);
+    /* justify-items: center;  */
+    /* align-items:center; */
+    /* place-items: center end; */
+    
+    justify-content: space-evenly;
+    /* align-content: flex-start; */
+    /* place-content: center center; */
+
+}
+
+.grid-item{
+    border: .5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.grid-item:nth-child(2){
+    /* align-self: stretch; */
+    /* justify-self: stretch; */
+    /* place-self: start end; */
+    background-color: royalblue;
+    order: 1;
+}
